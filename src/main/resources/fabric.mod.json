@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "regen",
+	"version": "${version}",
+	"name": "Passive Regen",
+	"description": "Adds Passive Regeneration",
+	"authors": [
+		"q4niel"
+	],
+	"contact": {
+		"sources": "https://github.com/q4niel/Passive-Regen"
+	},
+	"license": "The Insight License II",
+	"icon": "assets/regen/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"q4niel.regen.PassiveRegen"
+		],
+		"fabric-datagen": [
+			"q4niel.regen.PassiveRegenDataGenerator"
+		]
+	},
+	"mixins": [
+		"regen.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
