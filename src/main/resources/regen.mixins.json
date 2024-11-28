@@ -2,7 +2,9 @@
 	"required": true,
 	"package": "q4niel.regen.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [],
+	"mixins": [
+		"PlayerEntityMixin"
+	],
 	"injectors": {
 		"defaultRequire": 1
 	}
