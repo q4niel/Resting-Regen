@@ -1,39 +1,42 @@
 {
 	"schemaVersion": 1,
-	"id": "regen",
+	"id": "resting_regen",
 	"version": "${version}",
-	"name": "Passive Regen",
-	"description": "Adds Passive Regeneration",
+	"name": "Resting Regen",
+	"description": "A Minecraft Fabric Mod: Out‑of‑Combat Health Recovery",
 	"authors": [
 		"q4niel"
 	],
-	"contributors": [
-		"Max Westerlund - Art Assets"
-	],
 	"contact": {
-		"homepage": "https://modrinth.com/mod/passive-regen",
-		"issues": "https://github.com/q4niel/Passive-Regen/issues",
-		"sources": "https://github.com/q4niel/Passive-Regen"
+		"homepage": "https://modrinth.com/mod/resting-regen",
+		"sources": "https://github.com/q4niel/Resting-Regen"
 	},
-	"license": "The Insight License II",
-	"icon": "assets/regen/icon.png",
+	"license": "Resting Regen License 1.0",
+	"icon": "assets/resting_regen/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"q4niel.regen.PassiveRegen"
+			{
+				"value": "dev.q4niel.resting_regen.RestingRegen",
+				"adapter": "kotlin"
+			}
 		],
 		"fabric-datagen": [
-			"q4niel.regen.PassiveRegenDataGenerator"
+			{
+				"value": "dev.q4niel.resting_regen.RestingRegenDataGenerator",
+				"adapter": "kotlin"
+			}
 		]
 	},
 	"mixins": [
-		"regen.mixins.json"
+		"resting_regen.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.9",
-		"minecraft": "~1.21",
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
 	},
 	"suggests": {
 		"another-mod": "*"
