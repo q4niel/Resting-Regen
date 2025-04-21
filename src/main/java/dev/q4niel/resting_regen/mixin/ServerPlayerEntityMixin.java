@@ -48,7 +48,7 @@ public class ServerPlayerEntityMixin {
                         pos.getY() + RestingRegen.INSTANCE.getVerticalBlockDistance(),
                         pos.getZ() + RestingRegen.INSTANCE.getHorizontalBlockDistance()
                 ),
-                entity -> entity.isAngryAt(_self.getServerWorld(), _self)
+                entity -> entity.isAngryAt(_self)
         );
 
         return !list.isEmpty();
