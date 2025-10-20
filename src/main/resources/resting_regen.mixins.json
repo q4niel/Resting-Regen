@@ -1,11 +1,12 @@
 {
 	"required": true,
-	"package": "dev.q4niel.resting_regen.mixin",
+	"package": "dev.q4niel.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ServerPlayerEntityMixin"
-	],
+	"mixins": [],
 	"injectors": {
 		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
 	}
 }

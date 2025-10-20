@@ -3,27 +3,27 @@
 	"id": "resting_regen",
 	"version": "${version}",
 	"name": "Resting Regen",
-	"description": "A Minecraft Fabric Mod: Out‑of‑Combat Health Recovery",
-	"authors": [
-		"q4niel"
-	],
+	"description": "Out‑of‑Combat Health Recovery",
+	"authors": ["q4niel"],
+    "contributors": ["MaxWesterlund (Art Assets)"],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/resting-regen",
-		"sources": "https://github.com/q4niel/Resting-Regen"
+		"sources": "https://github.com/q4niel/Resting-Regen",
+        "issues": "https://github.com/q4niel/Resting-Regen/issues"
 	},
-	"license": "Resting Regen License 1.0",
+	"license": "Resting Regen License",
 	"icon": "assets/resting_regen/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			{
-				"value": "dev.q4niel.resting_regen.RestingRegen",
+				"value": "dev.q4niel.RestingRegen",
 				"adapter": "kotlin"
 			}
 		],
 		"fabric-datagen": [
 			{
-				"value": "dev.q4niel.resting_regen.RestingRegenDataGenerator",
+				"value": "dev.q4niel.RestingRegenDataGenerator",
 				"adapter": "kotlin"
 			}
 		]
@@ -32,8 +32,8 @@
 		"resting_regen.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.13",
-		"minecraft": "~1.21.5",
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
 		"java": ">=21",
 		"fabric-api": "*",
 		"fabric-language-kotlin": "*"

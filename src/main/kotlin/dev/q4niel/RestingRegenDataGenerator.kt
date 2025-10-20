@@ -1,8 +1,8 @@
-package dev.q4niel.resting_regen
+package dev.q4niel
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator
 
-object RestingRegenDataGenerator: DataGeneratorEntrypoint {
+object RestingRegenDataGenerator : DataGeneratorEntrypoint {
 	override fun onInitializeDataGenerator(fabricDataGenerator: FabricDataGenerator) {}
 }

@@ -11,11 +11,11 @@
 
 ## Download
 - [Modrinth](https://modrinth.com/mod/resting-regen/versions)
-- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/resting-regen/files/all?page=1&pageSize=20)
-- [GitHub](https://github.com/q4niel/Resting-Regen/releases/tag/0.1.0)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/resting-regen/files/all?page=1&pageSize=20&showAlphaFiles=hide)
+- [GitHub](https://github.com/q4niel/Resting-Regen/releases)
 
 ## **Credits**
-- **Art Assets** created by **Max Westerlund**.
+- **Art Assets** created by [MaxWesterlund](https://github.com/MaxWesterlund).
 
 ## Feedback
 Found a bug or got some suggestions, head over to [GitHub Issues](https://github.com/q4niel/Resting-Regen/issues).
