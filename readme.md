@@ -11,7 +11,7 @@
 # This (#) is a comment
 
 # Number of game ticks between each heal (20 ticks = 1 second)
-heal_ticker_limit = 100
+heal_tick_time = 100
 
 # Minimum horizontal distance (in blocks)
 # the player must be from a monster to heal (must be decimal)

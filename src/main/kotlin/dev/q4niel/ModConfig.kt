@@ -4,7 +4,7 @@ import com.moandjiezana.toml.Toml
 import java.io.File
 
 data class ModConfigFile (
-    val healTickerLimit: Long = 100,
+    val healTickTime: Long = 100,
     val horizontalBlockDistance: Double = 20.0,
     val verticalBlockDistance: Double = 10.0
 )
@@ -21,7 +21,7 @@ object ModConfig {
         val toml = Toml().read(_cfgFile_);
 
         _config = ModConfigFile (
-            toml.getLong("heal_ticker_limit", _config.healTickerLimit),
+            toml.getLong("heal_tick_time", _config.healTickTime),
             toml.getDouble("horizontal_block_distance", _config.horizontalBlockDistance),
             toml.getDouble("vertical_block_distance", _config.verticalBlockDistance)
         );

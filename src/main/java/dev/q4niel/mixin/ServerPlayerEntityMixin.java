@@ -24,7 +24,7 @@ public class ServerPlayerEntityMixin {
             return;
         }
 
-        if (_healTicker++ < ModConfig.INSTANCE.get().getHealTickerLimit()) return;
+        if (_healTicker++ < ModConfig.INSTANCE.get().getHealTickTime()) return;
 
         _healTicker = 0;
         _self.heal(1);
