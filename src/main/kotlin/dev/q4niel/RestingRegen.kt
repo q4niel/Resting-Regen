@@ -11,13 +11,10 @@ object RestingRegen : ModInitializer {
     private val _logger_ = LoggerFactory.getLogger(modID_);
     fun print(string: String): Unit = _logger_.info(string);
 
-    val healTickerLimit: Int = 100;
-    val horizontalBlockDistance: Double = 20.0;
-    val verticalBlockDistance: Double = 10.0;
-
 	override fun onInitialize() {
         ServerWorldEvents.LOAD.register { server, world ->
             world.gameRules.get(GameRules.NATURAL_REGENERATION).set(false, world.server);
+            ModConfig.init();
         }
     }
 }

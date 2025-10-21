@@ -1,6 +1,6 @@
 package dev.q4niel.mixin;
 
-import dev.q4niel.RestingRegen;
+import dev.q4niel.ModConfig;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.Box;
@@ -24,7 +24,7 @@ public class ServerPlayerEntityMixin {
             return;
         }
 
-        if (_healTicker++ < RestingRegen.INSTANCE.getHealTickerLimit()) return;
+        if (_healTicker++ < ModConfig.INSTANCE.get().getHealTickerLimit()) return;
 
         _healTicker = 0;
         _self.heal(1);
@@ -32,8 +32,8 @@ public class ServerPlayerEntityMixin {
 
     private boolean _hostilesNearby() {
         Vec3d pos = _self.getEntityPos();
-        double y = RestingRegen.INSTANCE.getVerticalBlockDistance();
-        double xz = RestingRegen.INSTANCE.getHorizontalBlockDistance();
+        double y = ModConfig.INSTANCE.get().getVerticalBlockDistance();
+        double xz = ModConfig.INSTANCE.get().getHorizontalBlockDistance();
 
         List<HostileEntity> list = _self.getEntityWorld().getEntitiesByClass (
                 HostileEntity.class,
