@@ -3,11 +3,24 @@
 
 ## Features
 - Gamerule **naturalRegeneration** set to **false** by default
-- Players now regenerate **1HP** every **100Tick** if no hostiles are nearby
-- ***Hostiles Nearby Detection Distance in Blocks***:
-  - X: 20
-  - Y: 10
-  - Z: 20
+- Players now regenerate **HP** over time if no hostiles are nearby
+
+## Optional TOML Customization
+### File path: config/resting_regen.toml
+```toml
+# This (#) is a comment
+
+# Number of game ticks between each heal (20 ticks = 1 second)
+heal_ticker_limit = 100
+
+# Minimum horizontal distance (in blocks)
+# the player must be from a monster to heal (must be decimal)
+horizontal_block_distance = 20.0
+
+# Minimum vertical distance (in blocks)
+# the player must be from a monster to heal (must be decimal)
+vertical_block_distance = 10.0
+```
 
 ## Download
 - [Modrinth](https://modrinth.com/mod/resting-regen/versions)
